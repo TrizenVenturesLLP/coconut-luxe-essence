@@ -12,12 +12,16 @@ const HowItWorks = () => {
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Left column - Product images */}
+          {/* Left column - Product video */}
           <div className="relative">
-            <img 
-              src="/lovable-uploads/f872aa63-a272-4e39-8ff7-c7fa4ae88eb1.png" 
-              alt="How it works demonstration" 
-              className="rounded-2xl max-w-full"
+            <video 
+              src="https://cdn-video.wearewild.com/f_webm,q_auto:best,vc_auto,c_fit,ac_none,w_900,h_900/videos/1724754578-sage-bw-how-to.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="rounded-2xl max-w-full w-full h-auto object-cover"
+              controls
             />
             
             <div className="flex justify-center gap-4 mt-6">
