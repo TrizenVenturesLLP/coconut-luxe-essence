@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import ShopByCategory from '@/components/ShopByCategory';
 import ProductBenefits from '@/components/ProductBenefits';
+import HowItWorks from '@/components/HowItWorks';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -17,6 +18,9 @@ const Index = () => {
       
       {/* Product Benefits Section */}
       <ProductBenefits />
+      
+      {/* How It Works Section */}
+      <HowItWorks />
       
       {/* Main Content Placeholder (for future sections) */}
       <div className="bg-coconut-white min-h-screen flex items-center justify-center">
