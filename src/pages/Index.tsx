@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import ShopByCategory from '@/components/ShopByCategory';
+import ProductBenefits from '@/components/ProductBenefits';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -13,6 +14,9 @@ const Index = () => {
       
       {/* Shop by Category Section */}
       <ShopByCategory />
+      
+      {/* Product Benefits Section */}
+      <ProductBenefits />
       
       {/* Main Content Placeholder (for future sections) */}
       <div className="bg-coconut-white min-h-screen flex items-center justify-center">
