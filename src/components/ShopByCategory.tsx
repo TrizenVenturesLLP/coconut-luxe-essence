@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Lightbulb, ShoppingBag, Droplet, Flask, Cloud } from 'lucide-react';
+import { Lightbulb, ShoppingBag, Droplet, TestTube, Cloud } from 'lucide-react';
 import { 
   Carousel, 
   CarouselContent, 
@@ -65,7 +65,7 @@ const ShopByCategory = () => {
     { icon: Lightbulb, label: 'BEST SELLERS' },
     { icon: ShoppingBag, label: 'NEW' },
     { icon: Droplet, label: 'CLEANSERS + TONERS' },
-    { icon: Flask, label: 'SERUMS' },
+    { icon: TestTube, label: 'SERUMS' },
     { icon: Cloud, label: 'MOISTURIZERS' },
     { icon: ShoppingBag, label: 'ALL' }
   ];
