@@ -22,7 +22,9 @@ const Index = () => {
       {/* How It Works Section */}
       <HowItWorks />
       
-      <Footer />
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   );
 };
