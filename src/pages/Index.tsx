@@ -22,15 +22,13 @@ const Index = () => {
       {/* How It Works Section */}
       <HowItWorks />
       
-      {/* Featured Image Section */}
-      <div className="w-full py-16 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
-          <img 
-            src="https://www.cocokind.com/cdn/shop/files/Group_11135.png?v=1734973160" 
-            alt="Featured AELQEMY products" 
-            className="w-full h-auto rounded-lg shadow-lg" 
-          />
-        </div>
+      {/* Featured Image Section - Full Width */}
+      <div className="w-full py-16">
+        <img 
+          src="https://www.cocokind.com/cdn/shop/files/Group_11135.png?v=1734973160" 
+          alt="Featured AELQEMY products" 
+          className="w-full h-auto" 
+        />
       </div>
       
       <div id="contact">
