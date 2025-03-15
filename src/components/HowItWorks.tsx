@@ -23,18 +23,6 @@ const HowItWorks = () => {
               className="rounded-2xl max-w-full w-full h-auto object-cover"
               controls
             />
-            
-            <div className="flex justify-center gap-4 mt-6">
-              <div className="bg-white py-4 px-8 rounded-md flex items-center gap-2 shadow-sm">
-                <span className="text-lg font-medium">Deodorant</span>
-                <span role="img" aria-label="flower">🌸</span>
-              </div>
-              
-              <div className="bg-white py-4 px-8 rounded-md flex items-center gap-2 shadow-sm">
-                <span className="text-lg font-medium">Body Wash</span>
-                <span role="img" aria-label="water">🧴</span>
-              </div>
-            </div>
           </div>
           
           {/* Right column - Steps */}
