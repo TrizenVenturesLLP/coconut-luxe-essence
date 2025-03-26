@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import ShopByCategory from '@/components/ShopByCategory';
 import ProductBenefits from '@/components/ProductBenefits';
+import SkinTypes from '@/components/SkinTypes';
 import HowItWorks from '@/components/HowItWorks';
 import Footer from '@/components/Footer';
 
@@ -18,6 +19,9 @@ const Index = () => {
       
       {/* Product Benefits Section */}
       <ProductBenefits />
+      
+      {/* Skin Types Section */}
+      <SkinTypes />
       
       {/* How It Works Section */}
       <HowItWorks />
