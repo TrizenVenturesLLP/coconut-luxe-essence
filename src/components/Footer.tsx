@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
+import { Instagram, TikTok, Facebook, Youtube } from 'lucide-react';
 import { Separator } from './ui/separator';
 
 const Footer = () => {
@@ -71,8 +71,8 @@ const Footer = () => {
               <a href="#" aria-label="Instagram" className="text-gray-700 hover:text-gray-900">
                 <Instagram size={20} />
               </a>
-              <a href="#" aria-label="Twitter" className="text-gray-700 hover:text-gray-900">
-                <Twitter size={20} />
+              <a href="#" aria-label="TikTok" className="text-gray-700 hover:text-gray-900">
+                <TikTok size={20} />
               </a>
               <a href="#" aria-label="Facebook" className="text-gray-700 hover:text-gray-900">
                 <Facebook size={20} />
