@@ -9,6 +9,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Footer from '@/components/Footer';
 import VideoSection from '@/components/VideoSection';
 import OurStory from '@/components/OurStory';
+import LaunchAnnouncement from '@/components/LaunchAnnouncement';
 
 const Index = () => {
   return (
@@ -30,6 +31,9 @@ const Index = () => {
       
       {/* Our Story Section */}
       <OurStory />
+      
+      {/* Launch Announcement Section */}
+      <LaunchAnnouncement />
       
       {/* How It Works Section */}
       <HowItWorks />
