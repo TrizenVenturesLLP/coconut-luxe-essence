@@ -7,6 +7,7 @@ import ProductBenefits from '@/components/ProductBenefits';
 import SkinTypes from '@/components/SkinTypes';
 import HowItWorks from '@/components/HowItWorks';
 import Footer from '@/components/Footer';
+import VideoSection from '@/components/VideoSection';
 
 const Index = () => {
   return (
@@ -22,6 +23,9 @@ const Index = () => {
       
       {/* Skin Types Section */}
       <SkinTypes />
+      
+      {/* Full Width Video Section */}
+      <VideoSection />
       
       {/* How It Works Section */}
       <HowItWorks />
