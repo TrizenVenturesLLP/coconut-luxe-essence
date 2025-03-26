@@ -8,7 +8,7 @@ type SkinTypeCardProps = {
 
 const SkinTypeCard = ({ type, imageUrl }: SkinTypeCardProps) => (
   <div className="flex flex-col items-center">
-    <div className="relative w-full aspect-square overflow-hidden rounded-lg mb-4">
+    <div className="relative w-3/4 mx-auto aspect-square overflow-hidden rounded-lg mb-4">
       <img 
         src={imageUrl} 
         alt={`${type} skin type`} 
@@ -41,7 +41,7 @@ const SkinTypes = () => {
 
   return (
     <section className="py-16 px-6 bg-coconut-cream">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-center mb-12">
           A formula for every skin type
         </h2>
