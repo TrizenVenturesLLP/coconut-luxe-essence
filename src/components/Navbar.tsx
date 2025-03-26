@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
+import { Separator } from './ui/separator';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,28 +27,44 @@ const Navbar = () => {
   };
 
   return (
-    <nav 
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 md:px-12",
-        isScrolled ? "bg-white shadow-sm py-4" : "bg-transparent py-6"
-      )}
-    >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="/" className="text-2xl font-display font-medium tracking-wide">
-          AELQEMY
-        </a>
-
-        {/* Contact Button */}
-        <Button 
-          variant="outline" 
-          className="flex items-center gap-2 rounded-full border-black hover:bg-black hover:text-white transition-colors"
-          onClick={scrollToContact}
-        >
-          <Mail size={16} />
-          <span>Contact</span>
-        </Button>
-      </div>
-    </nav>
+    <div className="fixed top-0 left-0 right-0 z-50 w-full">
+      <nav 
+        className={cn(
+          "transition-all duration-300 px-6 md:px-12",
+          isScrolled ? "bg-white py-4" : "bg-transparent py-6"
+        )}
+      >
+        <div className="max-w-7xl mx-auto flex flex-col items-center">
+          <div className="w-full flex items-center justify-between">
+            {/* Empty div to balance the flex container */}
+            <div className="w-24" /> 
+            
+            {/* Centered Logo */}
+            <a href="/" className="text-2xl font-display font-medium tracking-wide text-center">
+              AELQEMY
+            </a>
+            
+            {/* Contact Button aligned to the right */}
+            <Button 
+              variant="outline" 
+              className="flex items-center gap-2 rounded-full border-black hover:bg-black hover:text-white transition-colors w-24"
+              onClick={scrollToContact}
+            >
+              <Mail size={16} />
+              <span>Contact</span>
+            </Button>
+          </div>
+        </div>
+      </nav>
+      
+      {/* Horizontal separator below navbar */}
+      <Separator 
+        className={cn(
+          "w-full h-[1px] transition-all duration-300",
+          isScrolled ? "bg-gray-200" : "bg-gray-200/50"
+        )} 
+      />
+    </div>
   );
 };
 
