@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Sparkles, X, Sprout, Package } from 'lucide-react';
+import { Sprout, Leaf, Heart } from 'lucide-react';
 
 type BenefitItemProps = {
   icon: React.ReactNode;
@@ -31,17 +31,17 @@ const ProductBenefits = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-6 lg:gap-8">
           <BenefitItem 
-            icon={<Sparkles size={42} strokeWidth={1.5} />}
-            title="Effective."
+            icon={<Heart size={42} strokeWidth={1.5} />}
+            title="Cruelty Free."
             description="Rigorously tried, tested and customer approved."
-            iconColor="text-yellow-400"
+            iconColor="text-pink-500"
           />
           
           <BenefitItem 
-            icon={<X size={42} strokeWidth={1.5} />}
-            title="No waste."
+            icon={<Leaf size={42} strokeWidth={1.5} />}
+            title="Vegan."
             description="Unique plastic-free, compostable refills."
-            iconColor="text-red-500"
+            iconColor="text-green-500"
           />
           
           <BenefitItem 
@@ -52,10 +52,10 @@ const ProductBenefits = () => {
           />
           
           <BenefitItem 
-            icon={<Package size={42} strokeWidth={1.5} />}
-            title="Super simple."
+            icon={<Heart size={42} strokeWidth={1.5} />}
+            title="Sensitive Skin Friendly."
             description="To your door, or find us in store."
-            iconColor="text-amber-500"
+            iconColor="text-purple-500"
           />
         </div>
       </div>
