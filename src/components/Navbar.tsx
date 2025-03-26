@@ -34,7 +34,7 @@ const Navbar = () => {
           isScrolled ? "bg-white py-4" : "bg-transparent py-6"
         )}
       >
-        <div className="max-w-7xl mx-auto flex flex-col items-center">
+        <div className="max-w-7xl mx-auto">
           <div className="w-full flex items-center justify-between">
             {/* Empty div to balance the flex container */}
             <div className="w-24" /> 
@@ -54,16 +54,16 @@ const Navbar = () => {
               <span>Contact</span>
             </Button>
           </div>
+          
+          {/* Horizontal separator moved closer to the logo */}
+          <Separator 
+            className={cn(
+              "w-full h-[1px] mt-2 transition-all duration-300",
+              isScrolled ? "bg-gray-200" : "bg-gray-200/50"
+            )} 
+          />
         </div>
       </nav>
-      
-      {/* Horizontal separator below navbar */}
-      <Separator 
-        className={cn(
-          "w-full h-[1px] transition-all duration-300",
-          isScrolled ? "bg-gray-200" : "bg-gray-200/50"
-        )} 
-      />
     </div>
   );
 };
