@@ -15,7 +15,7 @@ const SkinTypeCard = ({ type, imageUrl }: SkinTypeCardProps) => (
         className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
       />
     </div>
-    <h3 className="text-lg font-medium text-center">{type}</h3>
+    <h3 className="text-lg font-medium text-center font-sans">{type}</h3>
   </div>
 );
 

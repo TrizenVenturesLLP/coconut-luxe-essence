@@ -8,7 +8,7 @@ const OurStory = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-8">AELQEMY Is Nature-Powered Beauty</h2>
         
-        <div className="space-y-6 mb-10">
+        <div className="space-y-6 mb-10 font-sans">
           <p className="text-gray-700 leading-relaxed text-lg">
             AELQEMY is a skincare brand dedicated to blending ancient wisdom with modern science. Our 
             rich, plant-derived ingredients have been nourishing and rejuvenating skin for centuries.
@@ -27,7 +27,7 @@ const OurStory = () => {
           </p>
         </div>
         
-        <Button className="mt-6 bg-teal-600 hover:bg-teal-700">
+        <Button className="mt-6 bg-teal-600 hover:bg-teal-700 font-sans">
           Learn More About Our Mission
         </Button>
       </div>

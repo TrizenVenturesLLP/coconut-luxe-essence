@@ -21,11 +21,11 @@ const VideoSection = () => {
 
       {/* Text Overlay */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-6">
-        <h2 className="text-center font-display">
-          <span className="block text-3xl md:text-4xl lg:text-5xl mb-4">
+        <h2 className="text-center">
+          <span className="block text-3xl md:text-4xl lg:text-5xl mb-4 font-display">
             Pure Ingredients
           </span>
-          <span className="block text-lg md:text-xl lg:text-2xl font-light max-w-2xl text-center">
+          <span className="block text-lg md:text-xl lg:text-2xl font-light max-w-2xl text-center font-sans">
             Our products are made with carefully selected natural ingredients that nourish your skin without harmful chemicals.
           </span>
         </h2>

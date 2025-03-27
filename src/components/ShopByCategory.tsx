@@ -21,7 +21,7 @@ const CategoryItem = ({ icon: Icon, label, className = '' }: {
     <div className="w-24 h-24 rounded-full bg-coconut-beige flex items-center justify-center transition-all hover:scale-105">
       <Icon className="w-10 h-10 text-gray-800" strokeWidth={1.5} />
     </div>
-    <span className="text-xs font-medium tracking-wide text-center">{label}</span>
+    <span className="text-xs font-medium tracking-wide text-center font-sans">{label}</span>
   </div>
 );
 
@@ -39,7 +39,7 @@ const ProductItem = ({
     <Card className="relative overflow-hidden border-0 shadow-sm group">
       {badge && (
         <div className="absolute top-3 right-3 z-10">
-          <Badge variant="outline" className={`px-3 py-1 rounded-full text-xs font-medium ${
+          <Badge variant="outline" className={`px-3 py-1 rounded-full text-xs font-medium font-sans ${
             badge === 'NEW' ? 'bg-coconut-beige' : 'bg-coconut-accent'
           }`}>
             {badge}
@@ -56,7 +56,7 @@ const ProductItem = ({
         </div>
       </CardContent>
     </Card>
-    <h3 className="mt-3 text-sm font-medium text-center">{title}</h3>
+    <h3 className="mt-3 text-sm font-medium text-center font-sans">{title}</h3>
   </div>
 );
 
@@ -103,7 +103,7 @@ const ShopByCategory = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display mb-2">shop by category</h2>
-          <a href="#" className="text-sm text-gray-700 border-b border-gray-400 hover:border-gray-800 transition-colors">
+          <a href="#" className="text-sm text-gray-700 border-b border-gray-400 hover:border-gray-800 transition-colors font-sans">
             shop all
           </a>
         </div>

@@ -43,10 +43,10 @@ const HeroSection = () => {
         {/* Scroll Indicator */}
         <button 
           onClick={scrollToContent}
-          className="absolute bottom-10 flex flex-col items-center animate-fade-in opacity-0 cursor-pointer"
+          className="absolute bottom-10 flex flex-col items-center animate-fade-in opacity-0 cursor-pointer font-sans"
           style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}
         >
-          <span className="text-xs font-sans font-light mb-2">Discover More</span>
+          <span className="text-xs font-light mb-2">Discover More</span>
           <ChevronDown className="animate-scroll-down" size={20} />
         </button>
       </div>

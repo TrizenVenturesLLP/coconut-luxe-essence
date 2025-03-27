@@ -27,7 +27,7 @@ const HowItWorks = () => {
           
           {/* Right column - Steps */}
           <div className="flex flex-col justify-center">
-            <div className="space-y-12">
+            <div className="space-y-12 font-sans">
               <div>
                 <h3 className="text-xl font-medium mb-3 flex items-center gap-2">
                   <span>1. Choose your case</span>
@@ -59,7 +59,7 @@ const HowItWorks = () => {
               </div>
               
               <div>
-                <Button className="rounded-full bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 h-auto">
+                <Button className="rounded-full bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 h-auto font-sans">
                   GET STARTED <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>

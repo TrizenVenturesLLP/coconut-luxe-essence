@@ -21,7 +21,7 @@ const LaunchAnnouncement = () => {
             WE ARE LAUNCHING SOON
           </h2>
           <div className="h-1 w-24 bg-white mx-auto"></div>
-          <p className="mt-6 text-xl md:text-2xl max-w-2xl">
+          <p className="mt-6 text-xl md:text-2xl max-w-2xl font-sans">
             Our highly anticipated coconut-infused collection will be available next month
           </p>
         </div>

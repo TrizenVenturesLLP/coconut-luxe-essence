@@ -13,7 +13,7 @@ const BenefitItem = ({ icon, title, iconColor = 'text-coconut-accent' }: Benefit
     <div className={`mb-2 ${iconColor}`}>
       {icon}
     </div>
-    <h3 className="text-lg font-medium">{title}</h3>
+    <h3 className="text-lg font-medium font-sans">{title}</h3>
   </div>
 );
 
