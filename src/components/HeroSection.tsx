@@ -12,18 +12,13 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
+      {/* Image Background */}
       <div className="absolute inset-0 w-full h-full">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1600&q=80"
+          alt="Natural coconut tree landscape"
           className="w-full h-full object-cover"
-        >
-          <source src="https://cdn.shopify.com/videos/c/o/v/9c88f626111d4f37bbaa870b297b295b.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        />
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
       </div>
 
