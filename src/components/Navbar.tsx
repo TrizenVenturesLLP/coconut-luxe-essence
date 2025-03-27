@@ -39,7 +39,7 @@ const Navbar = () => {
             {/* Empty div to balance the flex container */}
             <div className="w-24" /> 
             
-            {/* Centered Logo */}
+            {/* Centered Logo with Didot font */}
             <a href="/" className="text-2xl font-display font-medium tracking-wide text-center">
               AELQEMY
             </a>
@@ -47,7 +47,7 @@ const Navbar = () => {
             {/* Contact Button aligned to the right */}
             <Button 
               variant="outline" 
-              className="flex items-center gap-2 rounded-full border-black hover:bg-black hover:text-white transition-colors w-24"
+              className="flex items-center gap-2 rounded-full border-black hover:bg-black hover:text-white transition-colors w-24 font-sans"
               onClick={scrollToContact}
             >
               <Mail size={16} />

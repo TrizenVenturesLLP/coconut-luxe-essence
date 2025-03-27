@@ -130,8 +130,8 @@ export default {
 				'scroll-down': 'scroll-down 2s ease-in-out infinite'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				display: ['Playfair Display', 'serif']
+				sans: ['Avenir', 'Inter', 'sans-serif'],
+				display: ['Didot', 'Playfair Display', 'serif']
 			}
 		}
 	},
