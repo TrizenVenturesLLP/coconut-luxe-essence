@@ -12,17 +12,6 @@ const LaunchAnnouncement = () => {
           alt="Coconut trees in nature"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-      </div>
-      
-      {/* Text Overlay */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-6">
-        <div className="text-center">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 tracking-widest text-white">
-            AELQEMY
-          </h2>
-          <div className="h-1 w-24 bg-white mx-auto"></div>
-        </div>
       </div>
     </section>
   );
