@@ -25,7 +25,7 @@ const HeroSection = () => {
     >
       {/* Image Background - No transparency overlay */}
       <div className="absolute inset-0">
-        <AspectRatio ratio={16/9} className="h-full">
+        <AspectRatio ratio={isMobile ? 16/9 : 21/9} className="h-full">
           <img
             src={hero}
             alt="Natural coconut tree landscape"
@@ -33,7 +33,7 @@ const HeroSection = () => {
             style={{ 
               objectPosition: isMobile ? 'left center' : 'center center',
               objectFit: 'cover',
-              transform: isMobile ? 'scale(1)' : 'scale(0.9)' // Added scale transformation to zoom out on laptop view
+              transform: isMobile ? 'scale(1)' : 'scale(1)' // Removed scaling in laptop view
             }}
           />
         </AspectRatio>
