@@ -32,26 +32,13 @@ const Navbar = () => {
         className="bg-white transition-all duration-300 px-6 md:px-12 py-4"
       >
         <div className="max-w-7xl mx-auto">
-          <div className="w-full flex items-center justify-between">
-            {/* Empty div to balance the flex container */}
-            <div className="w-24" /> 
-            
-            {/* Centered Logo with styling matching the provided image */}
+          <div className="w-full flex items-center justify-center">
+            {/* Centered Logo with improved styling */}
             <a href="/" className="text-center">
-              <span className="text-3xl font-display font-medium tracking-wider text-[#006c3b]">
+              <span className="text-3xl font-display font-bold tracking-wider text-[#006c3b]">
                 AELQEMY
               </span>
             </a>
-            
-            {/* Contact Button aligned to the right */}
-            {/* <Button 
-              variant="outline" 
-              className="flex items-center gap-2 rounded-full border-black hover:bg-black hover:text-white transition-colors w-24 font-sans"
-              onClick={scrollToContact}
-            >
-              <Mail size={16} />
-              <span>Contact</span>
-            </Button> */}
           </div>
           
           {/* Horizontal separator moved closer to the logo */}
