@@ -1,17 +1,15 @@
 
 import React from 'react';
-import { Sprout, Leaf, Heart, Rabbit } from 'lucide-react';
 
 type BenefitItemProps = {
-  icon: React.ReactNode;
+  imageSrc: string;
   title: string;
-  iconColor?: string;
 };
 
-const BenefitItem = ({ icon, title, iconColor = 'text-coconut-accent' }: BenefitItemProps) => (
+const BenefitItem = ({ imageSrc, title }: BenefitItemProps) => (
   <div className="flex flex-col items-center text-center">
-    <div className={`mb-2 ${iconColor}`}>
-      {icon}
+    <div className="mb-2">
+      <img src={imageSrc} alt={title} className="w-12 h-12 object-contain" />
     </div>
     <h3 className="text-lg font-medium font-sans">{title}</h3>
   </div>
@@ -27,27 +25,23 @@ const ProductBenefits = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-3 justify-items-center">
           <BenefitItem 
-            icon={<Rabbit size={42} strokeWidth={1.5} />}
+            imageSrc="/public/imgs/crueltyfree.png"
             title="Cruelty Free"
-            iconColor="text-pink-500"
           />
           
           <BenefitItem 
-            icon={<Leaf size={42} strokeWidth={1.5} />}
+            imageSrc="/public/imgs/vegan.png"
             title="Vegan"
-            iconColor="text-green-500"
           />
           
           <BenefitItem 
-            icon={<Sprout size={42} strokeWidth={1.5} />}
-            title="Plant powered"
-            iconColor="text-green-500"
+            imageSrc="/public/imgs/parabenfree.png"
+            title="Paraben Free"
           />
           
           <BenefitItem 
-            icon={<Heart size={42} strokeWidth={1.5} />}
-            title="Sensitive Skin Friendly"
-            iconColor="text-purple-500"
+            imageSrc="/public/imgs/slsfree.png"
+            title="SLS Free"
           />
         </div>
       </div>
