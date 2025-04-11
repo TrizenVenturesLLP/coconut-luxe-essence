@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 type SkinTypeCardProps = {
   type: string;
@@ -46,7 +47,15 @@ const SkinTypes = () => {
           A formula for every skin type
         </h2>
         
-        <img src="/public/imgs/formula_for_every_skin_type.png"></img>
+        <div className="w-full">
+          <AspectRatio ratio={16/9} className="overflow-hidden rounded-lg">
+            <img 
+              src="/imgs/formula_for_every_skin_type.png" 
+              alt="Skincare for every skin type" 
+              className="w-full h-full object-cover"
+            />
+          </AspectRatio>
+        </div>
       </div>
     </section>
   );
