@@ -1,10 +1,13 @@
 
 import React from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 import after from './assests/after_story.png';
 
 const LaunchAnnouncement = () => {
+  const isMobile = useIsMobile();
+  
   return (
-    <section className="relative w-full h-[500px] overflow-hidden">
+    <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '350px' : '500px' }}>
       {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
         <img
