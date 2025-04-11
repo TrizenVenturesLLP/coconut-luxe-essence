@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { Home } from 'lucide-react';
 
 const Footer = () => {
   const isMobile = useIsMobile();
@@ -11,6 +12,11 @@ const Footer = () => {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const scrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -27,6 +33,15 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-sans font-medium uppercase mb-3 sm:mb-4">About</h4>
             <ul className="space-y-2">
+              <li>
+                <a 
+                  href="#"
+                  className="text-sm font-sans hover:underline flex items-center gap-1"
+                  onClick={scrollToTop}
+                >
+                  <Home size={16} /> Home
+                </a>
+              </li>
               <li>
                 <a 
                   href="#our-story" 
