@@ -1,5 +1,6 @@
 
 import React from 'react';
+import after from './assests/after_story.png'
 
 const LaunchAnnouncement = () => {
   return (
@@ -7,7 +8,7 @@ const LaunchAnnouncement = () => {
       {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/public/imgs/after_story.png"
+          src={after}
           alt="Coconut trees in nature"
           className="w-full h-full object-cover"
         />

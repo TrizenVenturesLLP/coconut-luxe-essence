@@ -6,7 +6,7 @@ const OurStory = () => {
   return (
     <section className="py-20 px-6 bg-coconut-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-8">AELQEMY Is Nature-Powered Beauty</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-8">Our Story</h2>
         
         <div className="space-y-6 mb-10 font-sans">
           <p className="text-gray-700 leading-relaxed text-lg">

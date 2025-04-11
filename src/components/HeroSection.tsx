@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import hero from './assests/hero_section.png';
 
 const HeroSection = () => {
   const scrollToContent = () => {
@@ -15,7 +16,7 @@ const HeroSection = () => {
       {/* Image Background - No transparency overlay */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="/public/imgs/hero_section.png"
+          src={hero}
           alt="Natural coconut tree landscape"
           className="w-full h-full object-cover"
         />

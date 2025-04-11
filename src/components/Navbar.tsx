@@ -42,14 +42,14 @@ const Navbar = () => {
             </a>
             
             {/* Contact Button aligned to the right */}
-            <Button 
+            {/* <Button 
               variant="outline" 
               className="flex items-center gap-2 rounded-full border-black hover:bg-black hover:text-white transition-colors w-24 font-sans"
               onClick={scrollToContact}
             >
               <Mail size={16} />
               <span>Contact</span>
-            </Button>
+            </Button> */}
           </div>
           
           {/* Horizontal separator moved closer to the logo */}

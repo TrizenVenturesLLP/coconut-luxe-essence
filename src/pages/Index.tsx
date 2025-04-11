@@ -26,8 +26,8 @@ const Index = () => {
       {/* Skin Types Section */}
       <SkinTypes />
       
-      {/* Full Width Video Section */}
-      <VideoSection />
+      {/* Full Width Video Section
+      <VideoSection /> */}
       
       {/* Our Story Section */}
       <OurStory />
@@ -35,17 +35,17 @@ const Index = () => {
       {/* Launch Announcement Section */}
       <LaunchAnnouncement />
       
-      {/* How It Works Section */}
-      <HowItWorks />
+      {/* How It Works Section
+      <HowItWorks /> */}
       
       {/* Featured Image Section - Full Width */}
-      <div className="w-full py-16">
+      {/* <div className="w-full py-16">
         <img 
           src="https://www.cocokind.com/cdn/shop/files/Group_11135.png?v=1734973160" 
           alt="Featured AELQEMY products" 
           className="w-full h-auto" 
         />
-      </div>
+      </div> */}
       
       <div id="contact">
         <Footer />

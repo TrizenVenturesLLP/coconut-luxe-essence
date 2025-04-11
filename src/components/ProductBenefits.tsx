@@ -1,5 +1,9 @@
 
 import React from 'react';
+import crueltyFree from './crueltyfree.png';
+import parabenfree from './assests/parabenfree.png';
+import vegan from './assests/vegan.png';
+import slsfree from './assests/slsfree.png'
 
 type BenefitItemProps = {
   imageSrc: string;
@@ -25,22 +29,22 @@ const ProductBenefits = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-3 justify-items-center">
           <BenefitItem 
-            imageSrc="/public/imgs/crueltyfree.png"
+            imageSrc={crueltyFree}
             title="Cruelty Free"
           />
           
           <BenefitItem 
-            imageSrc="/public/imgs/vegan.png"
+            imageSrc={vegan}
             title="Vegan"
           />
           
           <BenefitItem 
-            imageSrc="/public/imgs/parabenfree.png"
+            imageSrc={parabenfree}
             title="Paraben Free"
           />
           
           <BenefitItem 
-            imageSrc="/public/imgs/slsfree.png"
+            imageSrc={slsfree}
             title="SLS Free"
           />
         </div>
