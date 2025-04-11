@@ -7,7 +7,7 @@ const LaunchAnnouncement = () => {
       {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1600&q=80"
+          src="/public/imgs/after_story.png"
           alt="Coconut trees in nature"
           className="w-full h-full object-cover"
         />
@@ -15,7 +15,7 @@ const LaunchAnnouncement = () => {
       </div>
       
       {/* Text Overlay */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-6">
+      {/* <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-6">
         <div className="text-center">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-display mb-6 tracking-widest">
             WE ARE LAUNCHING SOON
@@ -25,7 +25,7 @@ const LaunchAnnouncement = () => {
             Our highly anticipated coconut-infused collection will be available next month
           </p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

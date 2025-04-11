@@ -46,15 +46,7 @@ const SkinTypes = () => {
           A formula for every skin type
         </h2>
         
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {skinTypes.map((skin, index) => (
-            <SkinTypeCard 
-              key={index}
-              type={skin.type}
-              imageUrl={skin.imageUrl}
-            />
-          ))}
-        </div>
+        <img src="/public/imgs/formula_for_every_skin_type.png"></img>
       </div>
     </section>
   );

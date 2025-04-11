@@ -22,9 +22,6 @@ const OurStory = () => {
           </p>
         </div>
         
-        <Button className="mt-6 bg-teal-600 hover:bg-teal-700 font-sans">
-          Learn More About Our Mission
-        </Button>
       </div>
     </section>
   );
