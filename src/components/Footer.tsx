@@ -41,11 +41,11 @@ const Footer = () => {
               © {new Date().getFullYear()} AELQEMY. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              {['Privacy Policy', 'Terms of Service', 'Accessibility'].map(item => (
+              {/* {['Privacy Policy', 'Terms of Service', 'Accessibility'].map(item => (
                 <a key={item} href="#" className="text-xs font-sans text-gray-500 hover:underline">
                   {item}
                 </a>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>
