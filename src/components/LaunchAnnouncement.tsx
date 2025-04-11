@@ -8,21 +8,18 @@ const LaunchAnnouncement = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '250px' : '500px' }}>
+    <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '350px' : '500px' }}>
       {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
-        <AspectRatio ratio={isMobile ? 1/1 : 21/9} className="h-full">
-          <img
-            src={after}
-            alt="Coconut trees in nature"
-            className="w-full h-full"
-            style={{ 
-              objectFit: 'contain',
-              objectPosition: 'center center',
-              transform: 'scale(1)'
-            }}
-          />
-        </AspectRatio>
+        <img
+          src={after}
+          alt="Coconut trees in nature"
+          className="w-full h-full"
+          style={{ 
+            objectFit: 'contain',
+            objectPosition: 'center center'
+          }}
+        />
       </div>
     </section>
   );
