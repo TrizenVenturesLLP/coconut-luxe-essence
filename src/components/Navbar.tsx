@@ -29,10 +29,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-full">
       <nav 
-        className={cn(
-          "transition-all duration-300 px-6 md:px-12",
-          isScrolled ? "bg-white py-4" : "bg-transparent py-6"
-        )}
+        className="bg-white transition-all duration-300 px-6 md:px-12 py-4"
       >
         <div className="max-w-7xl mx-auto">
           <div className="w-full flex items-center justify-between">
@@ -57,10 +54,7 @@ const Navbar = () => {
           
           {/* Horizontal separator moved closer to the logo */}
           <Separator 
-            className={cn(
-              "w-full h-[1px] mt-2 transition-all duration-300",
-              isScrolled ? "bg-gray-200" : "bg-gray-200/50"
-            )} 
+            className="w-full h-[1px] mt-2 bg-gray-200" 
           />
         </div>
       </nav>
