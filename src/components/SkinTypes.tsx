@@ -32,6 +32,7 @@ const SkinTypes = () => {
             src="/imgs/formula_for_every_skin_type.png" 
             alt="Skincare for every skin type" 
             className="w-full h-full object-cover"
+            style={{ objectPosition: isMobile ? 'center' : 'center center' }}
           />
         </AspectRatio>
       </div>
