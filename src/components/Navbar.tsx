@@ -36,9 +36,11 @@ const Navbar = () => {
             {/* Empty div to balance the flex container */}
             <div className="w-24" /> 
             
-            {/* Centered Logo with Didot font */}
-            <a href="/" className="text-2xl font-display font-medium tracking-wide text-center">
-              AELQEMY
+            {/* Centered Logo with styling matching the provided image */}
+            <a href="/" className="text-center">
+              <span className="text-3xl font-display font-medium tracking-wider text-[#006c3b]">
+                AELQEMY
+              </span>
             </a>
             
             {/* Contact Button aligned to the right */}
