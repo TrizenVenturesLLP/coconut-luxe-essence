@@ -1,23 +1,26 @@
 
 import React from 'react';
 import { Button } from './ui/button';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const OurStory = () => {
+  const isMobile = useIsMobile();
+  
   return (
-    <section id="our-story" className="py-20 px-6 bg-coconut-white">
+    <section id="our-story" className="py-12 sm:py-20 px-4 sm:px-6 bg-coconut-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-8">Our Story</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 sm:mb-8">Our Story</h2>
         
-        <div className="space-y-6 mb-10 font-sans">
-          <p className="text-gray-700 leading-relaxed text-lg">
+        <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10 font-sans">
+          <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
           Aelqemy is Coconut Powered Beauty rooted in the wisdom of nature and elevated by science. At the heart of our formulations is sustainably sourced coconut water-rich in electrolytes, minerals, and skin-reviving nutrients.
           </p>
           
-          <p className="text-gray-700 leading-relaxed text-lg">
+          <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
           We blend this hero ingredient with meticulously chosen plant extracts and lab-approved actives to create transformative, high-performance skincare. Every product is designed to nourish, brighten, and restore your skin-naturally and effectively.
           </p>
           
-          <p className="text-xl font-medium text-teal-600 mt-10">
+          <p className="text-lg sm:text-xl font-medium text-teal-600 mt-6 sm:mt-10">
           We believe in circular beauty: clean formulations, ethical sourcing, and earth-friendly practices.
           </p>
         </div>

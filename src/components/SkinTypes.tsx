@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useIsMobile } from '@/hooks/use-mobile';
 
 type SkinTypeCardProps = {
   type: string;
@@ -21,44 +22,19 @@ const SkinTypeCard = ({ type, imageUrl }: SkinTypeCardProps) => (
 );
 
 const SkinTypes = () => {
-  const skinTypes = [
-    { 
-      type: "Dry", 
-      imageUrl: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-    },
-    { 
-      type: "Oily", 
-      imageUrl: "https://images.unsplash.com/photo-1614159102922-8b67a39d6124?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-    },
-    { 
-      type: "Sensitive", 
-      imageUrl: "https://images.unsplash.com/photo-1591130901921-3f0652bb3915?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-    },
-    { 
-      type: "Mature", 
-      imageUrl: "https://images.unsplash.com/photo-1630090902989-3b9ec1deb2f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-    }
-  ];
-
+  const isMobile = useIsMobile();
+  
   return (
-    <section className="py-16 px-6 bg-coconut-cream">
-      {/* <div className="container mx-auto max-w-7xl">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-center mb-12">
-          A formula for every skin type
-        </h2>
-        
-       
-      </div> */}
-
-        <div className="w-full">
-          <AspectRatio ratio={16/9} className="overflow-hidden rounded-lg">
-            <img 
-              src="/imgs/formula_for_every_skin_type.png" 
-              alt="Skincare for every skin type" 
-              className="w-full h-full object-cover"
-            />
-          </AspectRatio>
-        </div>
+    <section className="py-10 sm:py-16 px-4 sm:px-6 bg-coconut-cream">
+      <div className="w-full">
+        <AspectRatio ratio={isMobile ? 3/2 : 16/9} className="overflow-hidden rounded-lg">
+          <img 
+            src="/imgs/formula_for_every_skin_type.png" 
+            alt="Skincare for every skin type" 
+            className="w-full h-full object-cover"
+          />
+        </AspectRatio>
+      </div>
     </section>
   );
 };
