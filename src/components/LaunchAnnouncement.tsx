@@ -14,11 +14,7 @@ const LaunchAnnouncement = () => {
           src={after}
           alt="Coconut trees in nature"
           className="w-full h-full object-cover"
-          style={{ 
-            objectPosition: isMobile ? 'center' : 'center center',
-            maxWidth: '100%',
-            width: 'auto'
-          }}
+          style={{ objectPosition: isMobile ? 'center' : 'center center' }}
         />
       </div>
     </section>

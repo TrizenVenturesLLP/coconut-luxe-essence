@@ -28,11 +28,7 @@ const HeroSection = () => {
           src={hero}
           alt="Natural coconut tree landscape"
           className="w-full h-full object-cover"
-          style={{ 
-            objectPosition: isMobile ? 'center' : 'center bottom',
-            maxWidth: '100%',
-            width: 'auto'
-          }}
+          style={{ objectPosition: isMobile ? 'center' : 'center bottom' }}
         />
       </div>
 
