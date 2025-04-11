@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden" style={{ height: 'calc(100vh - 64px)', marginTop: '64px' }}>
+    <section className="relative w-full overflow-hidden" style={{ height: 'calc(100vh - 30px)', marginTop: '64px' }}>
       {/* Image Background - No transparency overlay */}
       <div className="absolute inset-0 w-full h-full">
         <img
@@ -28,7 +28,6 @@ const HeroSection = () => {
           className="absolute bottom-10 flex flex-col items-center animate-fade-in opacity-0 cursor-pointer text-white font-sans"
           style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}
         >
-          <span className="text-xs font-light mb-2">Discover More</span>
           <ChevronDown className="animate-scroll-down" size={20} />
         </button>
       </div>
