@@ -19,7 +19,7 @@ const HeroSection = () => {
     <section 
       className="relative w-full overflow-hidden" 
       style={{ 
-        height: isMobile ? '60vh' : 'calc(100vh - 30px)', 
+        height: isMobile ? '60vh' : '100vh', // Increased from calc(100vh - 30px) to 100vh for laptop view
         marginTop: isMobile ? '54px' : '64px' 
       }}
     >
@@ -31,7 +31,7 @@ const HeroSection = () => {
             alt="Natural coconut tree landscape"
             className="w-full h-full object-cover"
             style={{ 
-              objectPosition: isMobile ? 'left center' : 'center bottom',
+              objectPosition: isMobile ? 'left center' : 'center center', // Changed from center bottom to center center for better visibility
               objectFit: 'cover'
             }}
           />
