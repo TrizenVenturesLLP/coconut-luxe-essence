@@ -42,7 +42,7 @@ const SkinTypes = () => {
 
   return (
     <section className="py-16 px-6 bg-coconut-cream">
-      <div className="max-w-5xl mx-auto">
+      <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-center mb-12">
           A formula for every skin type
         </h2>
