@@ -8,8 +8,8 @@ type BenefitItemProps = {
 
 const BenefitItem = ({ imageSrc, title }: BenefitItemProps) => (
   <div className="flex flex-col items-center text-center">
-    <div className="mb-2">
-      <img src={imageSrc} alt={title} className="w-12 h-12 object-contain" />
+    <div className="mb-3">
+      <img src={imageSrc} alt={title} className="w-16 h-16 object-contain" />
     </div>
     <h3 className="text-lg font-medium font-sans">{title}</h3>
   </div>
