@@ -10,20 +10,15 @@ const OurStory = () => {
         
         <div className="space-y-6 mb-10 font-sans">
           <p className="text-gray-700 leading-relaxed text-lg">
-            AELQEMY is a skincare brand dedicated to blending ancient wisdom with modern science. Our 
-            rich, plant-derived ingredients have been nourishing and rejuvenating skin for centuries.
-            We work in harmony with nature to hand-select our ingredients before using science to formulate the most 
-            effective natural combinations available.
+          Aelqemy is Coconut Powered Beauty rooted in the wisdom of nature and elevated by science. At the heart of our formulations is sustainably sourced coconut water-rich in electrolytes, minerals, and skin-reviving nutrients.
           </p>
           
           <p className="text-gray-700 leading-relaxed text-lg">
-            The name AELQEMY draws inspiration from ancient alchemists who sought to transform basic materials into 
-            something extraordinary. Similarly, we transform pure, natural ingredients into effective skincare solutions 
-            that work in harmony with your skin's natural processes.
+          We blend this hero ingredient with meticulously chosen plant extracts and lab-approved actives to create transformative, high-performance skincare. Every product is designed to nourish, brighten, and restore your skin-naturally and effectively.
           </p>
           
           <p className="text-xl font-medium text-teal-600 mt-10">
-            Beauty by nature. Powered by purpose.
+          We believe in circular beauty: clean formulations, ethical sourcing, and earth-friendly practices.
           </p>
         </div>
         

@@ -17,8 +17,8 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       
-      {/* Shop by Category Section */}
-      <ShopByCategory />
+      {/* Shop by Category Section
+      <ShopByCategory /> */}
       
       {/* Product Benefits Section */}
       <ProductBenefits />

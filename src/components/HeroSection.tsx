@@ -15,7 +15,7 @@ const HeroSection = () => {
       {/* Image Background */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1600&q=80"
+          src="/public/imgs/hero_section.png"
           alt="Natural coconut tree landscape"
           className="w-full h-full object-cover"
         />
@@ -32,13 +32,6 @@ const HeroSection = () => {
             Skincare powered by nature.
           </span>
         </h1>
-        
-        <button 
-          className="mt-10 px-8 py-3 bg-white bg-opacity-90 text-black rounded-full text-sm font-sans font-medium tracking-wide hover:bg-opacity-100 transition-all shadow-md animate-fade-in opacity-0" 
-          style={{ animationDelay: '1s', animationFillMode: 'forwards' }}
-        >
-          Shop Now
-        </button>
         
         {/* Scroll Indicator */}
         <button 
