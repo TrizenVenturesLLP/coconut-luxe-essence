@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 
@@ -10,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden" style={{ height: 'calc(100vh - 64px)', marginTop: '64px' }}>
       {/* Image Background - No transparency overlay */}
       <div className="absolute inset-0 w-full h-full">
         <img
