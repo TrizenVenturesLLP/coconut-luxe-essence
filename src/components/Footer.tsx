@@ -2,6 +2,14 @@
 import React from 'react';
 
 const Footer = () => {
+  const scrollToSection = (e: React.MouseEvent, sectionId: string) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-coconut-cream text-gray-700 py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -17,7 +25,11 @@ const Footer = () => {
             <h4 className="text-sm font-sans font-medium uppercase mb-4">About</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm font-sans hover:underline">
+                <a 
+                  href="#our-story" 
+                  className="text-sm font-sans hover:underline"
+                  onClick={(e) => scrollToSection(e, 'our-story')}
+                >
                   Our Story
                 </a>
               </li>

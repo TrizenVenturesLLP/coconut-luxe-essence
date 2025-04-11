@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 const OurStory = () => {
   return (
-    <section className="py-20 px-6 bg-coconut-white">
+    <section id="our-story" className="py-20 px-6 bg-coconut-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-8">Our Story</h2>
         
