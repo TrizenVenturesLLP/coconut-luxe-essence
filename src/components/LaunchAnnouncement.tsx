@@ -11,15 +11,15 @@ const LaunchAnnouncement = () => {
     <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '250px' : '500px' }}>
       {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
-        <AspectRatio ratio={isMobile ? 16/9 : 21/9} className="h-full">
+        <AspectRatio ratio={isMobile ? 1/1 : 21/9} className="h-full">
           <img
             src={after}
             alt="Coconut trees in nature"
             className="w-full h-full"
             style={{ 
-              objectFit: 'cover', 
+              objectFit: 'contain',
               objectPosition: 'center center',
-              transform: isMobile ? 'scale(0.9)' : 'scale(1)'
+              transform: 'scale(1)'
             }}
           />
         </AspectRatio>

@@ -27,12 +27,12 @@ const SkinTypes = () => {
   return (
     <section className="py-10 sm:py-16 px-4 sm:px-6 bg-coconut-cream">
       <div className="w-full">
-        <AspectRatio ratio={isMobile ? 3/2 : 16/9} className="overflow-hidden rounded-lg">
+        <AspectRatio ratio={isMobile ? 1/1 : 16/9} className="overflow-hidden rounded-lg">
           <img 
             src="/imgs/formula_for_every_skin_type.png" 
             alt="Skincare for every skin type" 
-            className="w-full h-full object-cover"
-            style={{ objectPosition: isMobile ? 'center' : 'center center' }}
+            className="w-full h-full object-contain sm:object-cover"
+            style={{ objectPosition: 'center' }}
           />
         </AspectRatio>
       </div>

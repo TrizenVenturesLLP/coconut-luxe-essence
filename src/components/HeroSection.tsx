@@ -20,7 +20,8 @@ const HeroSection = () => {
       className="relative w-full overflow-hidden" 
       style={{ 
         height: isMobile ? '60vh' : '100vh',
-        marginTop: isMobile ? '54px' : '64px' 
+        marginTop: isMobile ? '54px' : '64px',
+        marginBottom: 0 // Ensure no bottom margin
       }}
     >
       {/* Image Background - No transparency overlay */}
@@ -33,7 +34,7 @@ const HeroSection = () => {
             style={{ 
               objectPosition: isMobile ? 'left center' : 'center center',
               objectFit: 'cover',
-              transform: isMobile ? 'scale(1)' : 'scale(1)' // Removed scaling in laptop view
+              transform: 'scale(1)' // Consistent scale for both views
             }}
           />
         </AspectRatio>
