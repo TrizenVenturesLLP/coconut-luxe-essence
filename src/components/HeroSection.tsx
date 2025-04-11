@@ -3,6 +3,7 @@ import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import hero from './assests/hero_section.png';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
@@ -23,13 +24,18 @@ const HeroSection = () => {
       }}
     >
       {/* Image Background - No transparency overlay */}
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src={hero}
-          alt="Natural coconut tree landscape"
-          className="w-full h-full object-cover"
-          style={{ objectPosition: isMobile ? 'center' : 'center bottom' }}
-        />
+      <div className="absolute inset-0">
+        <AspectRatio ratio={16/9} className="h-full">
+          <img
+            src={hero}
+            alt="Natural coconut tree landscape"
+            className="w-full h-full object-cover"
+            style={{ 
+              objectPosition: isMobile ? 'left center' : 'center bottom',
+              objectFit: 'cover'
+            }}
+          />
+        </AspectRatio>
       </div>
 
       {/* Scroll Indicator - Keeping only this without text */}
