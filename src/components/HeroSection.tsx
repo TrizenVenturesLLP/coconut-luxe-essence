@@ -18,7 +18,7 @@ const HeroSection = () => {
     <section 
       className="relative w-full overflow-hidden" 
       style={{ 
-        height: isMobile ? 'calc(100vh - 20px)' : 'calc(100vh - 30px)', 
+        height: isMobile ? '60vh' : 'calc(100vh - 30px)', 
         marginTop: isMobile ? '54px' : '64px' 
       }}
     >
