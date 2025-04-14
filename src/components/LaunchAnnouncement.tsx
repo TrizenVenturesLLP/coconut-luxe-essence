@@ -16,7 +16,7 @@ const LaunchAnnouncement = () => {
           alt="Coconut trees in nature"
           className="w-full h-full"
           style={{ 
-            objectFit: 'contain',
+            // objectFit: 'contain',
             objectPosition: 'center center'
           }}
         />
