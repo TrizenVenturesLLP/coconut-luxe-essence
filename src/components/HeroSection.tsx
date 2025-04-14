@@ -7,7 +7,7 @@ const HeroSection = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '350px' : '700px' }}>
+    <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '400px' : '700px' }}>
       {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
         <img
