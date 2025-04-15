@@ -9,6 +9,7 @@ import OurStory from '@/components/OurStory';
 import LaunchAnnouncement from '@/components/LaunchAnnouncement';
 import ImageCarousel from '@/components/ImageCarousel';
 import HappySkin from '@/components/HappySkin';
+import PreLaunchBanner from '@/components/PreLaunchBanner';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <OurStory />
       <LaunchAnnouncement />
       <HappySkin />
+      <PreLaunchBanner />
       <div id="contact">
         <Footer />
       </div>
