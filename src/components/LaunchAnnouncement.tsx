@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
-import after from './assests/after_story.png';
+import after from './assests/afterstory.png';
 
 const LaunchAnnouncement = () => {
   const isMobile = useIsMobile();

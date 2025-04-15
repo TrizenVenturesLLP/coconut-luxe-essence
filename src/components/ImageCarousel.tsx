@@ -1,5 +1,7 @@
-
 import React from 'react';
+import One from './assests/swipe/1.png';
+import Two from './assests/swipe/2.png';
+import Three from './assests/swipe/3.png';
 import {
   Carousel,
   CarouselContent,
@@ -10,11 +12,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 
 const ImageCarousel = () => {
-  const images = [
-    'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800',
-    'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800',
-    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800'
-  ];
+  const images = [One, Two, Three];
 
   return (
     <section className="w-full py-10 bg-coconut-white">
@@ -28,14 +26,14 @@ const ImageCarousel = () => {
         >
           <CarouselContent>
             {images.map((image, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/1">
+              <CarouselItem key={index} className="basis-full">
                 <div className="p-1">
                   <Card className="border-0">
                     <CardContent className="flex aspect-[16/9] items-center justify-center p-0">
                       <img
                         src={image}
                         alt={`Carousel image ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </CardContent>
                   </Card>
