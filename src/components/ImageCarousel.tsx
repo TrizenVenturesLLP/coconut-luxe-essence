@@ -28,14 +28,14 @@ const ImageCarousel = () => {
         >
           <CarouselContent>
             {images.map((image, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/1">
+              <CarouselItem key={index} className="basis-full">
                 <div className="p-1">
                   <Card className="border-0">
-                    <CardContent className="flex aspect-[16/9] items-center justify-center p-0">
+                    <CardContent className="flex aspect-[4/5] items-center justify-center p-0">
                       <img
                         src={image}
                         alt={`Carousel image ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </CardContent>
                   </Card>
