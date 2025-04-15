@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import OurStory from '@/components/OurStory';
 import LaunchAnnouncement from '@/components/LaunchAnnouncement';
 import ImageCarousel from '@/components/ImageCarousel';
+import HappySkin from '@/components/HappySkin';
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <SkinTypes />
       <OurStory />
       <LaunchAnnouncement />
+      <HappySkin />
       <div id="contact">
         <Footer />
       </div>
