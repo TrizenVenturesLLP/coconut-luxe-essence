@@ -13,7 +13,20 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 
 const ImageCarousel = () => {
-  const images = [One, Two, Three];
+  const carouselContent = [
+    {
+      image: One,
+      description: "No more hiding. No more harsh treatments. Our science-backed, plant-powered formulas target blemishes and fade dark spots—gently, effectively. Clear skin, zero drama. Just confidence."
+    },
+    {
+      image: Two,
+      description: "Each Aelqemy formula is crafted with skin-intelligent ingredients—nutrient-rich coconut water, plant extracts, and clinically proven actives—working together to hydrate, brighten, and revive."
+    },
+    {
+      image: Three,
+      description: "Our formulations adapt to nourish, balance, and restore. Powered by nature, perfected by science—skincare that meets your skin exactly where it is."
+    }
+  ];
 
   return (
     <section className="w-full py-10 bg-coconut-white">
@@ -26,16 +39,21 @@ const ImageCarousel = () => {
           className="w-full"
         >
           <CarouselContent>
-            {images.map((image, index) => (
+            {carouselContent.map((item, index) => (
               <CarouselItem key={index} className="basis-full">
                 <div className="p-1">
                   <Card className="border-0">
-                    <CardContent className="flex aspect-[4/3] items-center justify-center p-0">
-                      <img
-                        src={image}
-                        alt={`Carousel image ${index + 1}`}
-                        className="w-full h-full object-contain"
-                      />
+                    <CardContent className="flex flex-col items-center justify-center p-0">
+                      <div className="flex aspect-[4/3] w-full">
+                        <img
+                          src={item.image}
+                          alt={`Carousel image ${index + 1}`}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <p className="text-center text-gray-700 mt-6 px-4 max-w-2xl mx-auto">
+                        {item.description}
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
