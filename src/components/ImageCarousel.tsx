@@ -30,11 +30,11 @@ const ImageCarousel = () => {
               <CarouselItem key={index} className="basis-full">
                 <div className="p-1">
                   <Card className="border-0">
-                    <CardContent className="flex aspect-[16/9] items-center justify-center p-0">
+                    <CardContent className="flex aspect-[4/3] items-center justify-center p-0">
                       <img
                         src={image}
                         alt={`Carousel image ${index + 1}`}
-                        className="w-full h-full object-scale-down"
+                        className="w-full h-full object-contain"
                       />
                     </CardContent>
                   </Card>
