@@ -7,7 +7,7 @@ const OurStory = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section id="our-story" className="py-12 sm:py-20 px-4 sm:px-6 bg-coconut-white">
+    <section id="our-story" className="pt-2 sm:pt-1 pb-12 sm:pb-20 px-4 sm:px-6 bg-coconut-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 sm:mb-8">Our Story</h2>
         
