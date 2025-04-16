@@ -7,7 +7,7 @@ const LaunchAnnouncement = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="relative w-full overflow-hidden h-[300px] md:h-[500px]">
+    <section className="relative w-full overflow-hidden h-[180px] md:h-[500px]">
       <div className="absolute inset-0">
         <img
           src={after}
