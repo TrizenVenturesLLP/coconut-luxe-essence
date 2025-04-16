@@ -3,7 +3,7 @@ import banner from './assests/above_footer.png';
 
 const PreLaunchBanner = () => {
   return (
-    <section className="relative w-full overflow-hidden h-[300px] md:h-[500px]">
+    <section className="relative w-full overflow-hidden h-[200px] md:h-[500px]">
       <div className="absolute inset-0">
         <img
           src={banner}
