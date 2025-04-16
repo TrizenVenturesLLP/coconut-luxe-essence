@@ -40,24 +40,28 @@ const ImageCarousel = () => {
         >
           <CarouselContent>
             {carouselContent.map((item, index) => (
-              <CarouselItem key={index} className="basis-full">
-                <div className="p-1">
-                  <Card className="border-0">
-                    <CardContent className="flex flex-col items-center justify-center p-0">
-                      <div className="flex aspect-[4/3] w-full">
-                        <img
-                          src={item.image}
-                          alt={`Carousel image ${index + 1}`}
-                          className="w-full h-full object-contain"
-                        />
-                      </div>
-                      <p className="text-center text-gray-700 mt-6 px-4 max-w-2xl mx-auto">
-                        {item.description}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
+              <CarouselItem key={index} className="basis-full h-screen">
+              <div className="p-1 h-full">
+                <Card className="border-0 h-full">
+                  <CardContent className="flex flex-col justify-center items-center p-4 h-full">
+                    {/* Image Area */}
+                    <div className="w-full flex-1 flex items-center justify-center overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={`Carousel image ${index + 1}`}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+            
+                    {/* Description Area */}
+                    <p className="text-center text-gray-700 mt-6 px-4 max-w-2xl">
+                      {item.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+            
             ))}
           </CarouselContent>
           <CarouselPrevious className="left-2" />
