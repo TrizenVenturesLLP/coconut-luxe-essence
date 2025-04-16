@@ -7,15 +7,12 @@ const LaunchAnnouncement = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '350px' : '500px' }}>
+    <section className="relative w-full overflow-hidden h-[300px] md:h-[500px]">
       <div className="absolute inset-0">
         <img
           src={after}
           alt="Launch announcement"
-          className="w-full"
-          style={{ 
-            objectPosition: 'center center'
-          }}
+          className="w-full h-full object-contain object-center"
         />
       </div>
     </section>
