@@ -18,7 +18,7 @@ const Index = () => {
       <HeroSection />
       <ProductBenefits />
       <ImageCarousel />
-      <SkinTypes />
+      {/* <SkinTypes /> */}
       <OurStory />
       <LaunchAnnouncement />
       <HappySkin />
