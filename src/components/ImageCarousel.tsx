@@ -1,3 +1,4 @@
+
 import React from 'react';
 import One from './assests/swipe/1.png';
 import Two from './assests/swipe/2.png';
@@ -29,7 +30,7 @@ const ImageCarousel = () => {
               <CarouselItem key={index} className="basis-full">
                 <div className="p-1">
                   <Card className="border-0">
-                    <CardContent className="flex aspect-[4/5] items-center justify-center p-0">
+                    <CardContent className="flex aspect-video items-center justify-center p-0">
                       <img
                         src={image}
                         alt={`Carousel image ${index + 1}`}
@@ -50,3 +51,4 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+
