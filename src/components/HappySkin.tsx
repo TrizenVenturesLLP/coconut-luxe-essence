@@ -15,7 +15,7 @@ const HappySkin = () => {
             <img
               src={happy}
               alt="Happy woman with glowing skin"
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-none" // Changed from rounded-lg to rounded-none
             />
           </div>
           
@@ -37,3 +37,4 @@ const HappySkin = () => {
 };
 
 export default HappySkin;
+
