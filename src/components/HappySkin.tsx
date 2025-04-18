@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import happy from './assests/Happy.png'
@@ -14,7 +15,7 @@ const HappySkin = () => {
             <img
               src={happy}
               alt="Happy woman with glowing skin"
-              className="w-full h-auto rounded-none" // Changed from rounded-lg to rounded-none
+              className="w-full h-auto rounded-lg" // Added rounded-lg
             />
           </div>
           
@@ -36,3 +37,4 @@ const HappySkin = () => {
 };
 
 export default HappySkin;
+

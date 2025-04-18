@@ -20,7 +20,7 @@ const BenefitItem = ({ imageSrc, title }: BenefitItemProps) => {
         <img 
           src={imageSrc} 
           alt={title} 
-          className="w-12 h-12 sm:w-16 sm:h-16 object-contain" 
+          className="w-12 h-12 sm:w-16 sm:h-16 object-contain rounded-lg" // Added rounded-lg
         />
       </div>
       <h3 className="text-sm sm:text-lg font-medium font-sans">{title}</h3>
@@ -65,3 +65,4 @@ const ProductBenefits = () => {
 };
 
 export default ProductBenefits;
+

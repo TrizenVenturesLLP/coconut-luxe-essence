@@ -10,7 +10,7 @@ const PreLaunchBanner = () => {
           <img
             src={banner}
             alt="Launch announcement"
-            className="w-full h-auto object-cover object-center"
+            className="w-full h-auto object-cover object-center rounded-lg" // Added rounded-lg
           />
         </div>
       </div>
@@ -19,3 +19,4 @@ const PreLaunchBanner = () => {
 };
 
 export default PreLaunchBanner;
+

@@ -13,7 +13,7 @@ const LaunchAnnouncement = () => {
           <img
             src={after}
             alt="Launch announcement"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover rounded-lg" // Added rounded-lg
           />
         </div>
       </div>
@@ -22,3 +22,4 @@ const LaunchAnnouncement = () => {
 };
 
 export default LaunchAnnouncement;
+

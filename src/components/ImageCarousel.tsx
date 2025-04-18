@@ -49,7 +49,7 @@ const ImageCarousel = () => {
                       <img
                         src={item.image}
                         alt={`Carousel image ${index + 1}`}
-                        className="max-h-full max-w-full object-contain"
+                        className="max-h-full max-w-full object-contain rounded-lg" // Added rounded-lg
                       />
                     </div>
             
@@ -73,3 +73,4 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
+
