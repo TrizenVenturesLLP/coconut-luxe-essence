@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from './ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -7,9 +6,9 @@ const OurStory = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section id="our-story" className="pt-2 sm:pt-1 pb-12 sm:pb-20 px-4 sm:px-6 bg-coconut-white">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 sm:mb-8">Our Story</h2>
+    <section id="our-story" className="w-full py-16 bg-coconut-white">
+      <div className="container max-w-6xl mx-auto px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 sm:mb-8 text-center">Our Story</h2>
         
         <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10 font-sans">
           <p className="text-gray-700 leading-relaxed text-base sm:text-lg">

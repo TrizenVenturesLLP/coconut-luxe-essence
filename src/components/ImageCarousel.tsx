@@ -29,7 +29,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <section className="w-full py-10 bg-coconut-white">
+    <section className="w-full py-16 bg-coconut-white">
       <div className="container max-w-6xl mx-auto px-4">
         <Carousel
           opts={{

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import happy from './assests/Happy.png'
@@ -37,4 +36,3 @@ const HappySkin = () => {
 };
 
 export default HappySkin;
-

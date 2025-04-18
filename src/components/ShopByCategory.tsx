@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Lightbulb, ShoppingBag, Droplet, TestTube, Cloud } from 'lucide-react';
 import { 
@@ -11,7 +10,6 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
-// Category item component
 const CategoryItem = ({ icon: Icon, label, className = '' }: { 
   icon: React.ElementType, 
   label: string,
@@ -25,7 +23,6 @@ const CategoryItem = ({ icon: Icon, label, className = '' }: {
   </div>
 );
 
-// Product item component
 const ProductItem = ({ 
   image, 
   title, 
@@ -99,8 +96,8 @@ const ShopByCategory = () => {
   ];
 
   return (
-    <section className="py-16 px-6 bg-coconut-cream">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full py-16 bg-coconut-cream">
+      <div className="container max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display mb-2">shop by category</h2>
           <a href="#" className="text-sm text-gray-700 border-b border-gray-400 hover:border-gray-800 transition-colors font-sans">
@@ -108,7 +105,6 @@ const ShopByCategory = () => {
           </a>
         </div>
 
-        {/* Categories */}
         <div className="mb-16 overflow-x-auto hide-scrollbar">
           <div className="flex space-x-8 md:space-x-12 min-w-max md:min-w-0 justify-center md:justify-between">
             {categories.map((category, index) => (
@@ -117,7 +113,6 @@ const ShopByCategory = () => {
           </div>
         </div>
 
-        {/* Product Carousel */}
         <Carousel className="mx-auto">
           <CarouselContent className="-ml-4">
             {products.map((product, index) => (

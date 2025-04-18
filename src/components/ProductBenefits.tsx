@@ -32,8 +32,8 @@ const ProductBenefits = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className={`${isMobile ? 'pt-0 pb-8' : 'py-10 sm:py-14'} px-4 sm:px-6 bg-coconut-white`}>
-      <div className="max-w-4xl mx-auto">
+    <section className="w-full py-16 bg-coconut-white">
+      <div className="container max-w-6xl mx-auto px-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display text-center mb-8 sm:mb-10">
           Naturally effective skin care, without the rubbish
         </h2>

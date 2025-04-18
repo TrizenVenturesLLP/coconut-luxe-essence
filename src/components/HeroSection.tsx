@@ -8,14 +8,13 @@ const HeroSection = () => {
 
   return (
     <section className="relative w-full mt-8 overflow-hidden" style={{ height: isMobile ? '350px' : '700px' }}>
-      {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
         <img
           src={hero}
           alt="Coconut trees in nature"
           className="w-full h-full"
           style={{ 
-            objectFit: 'contain',
+            objectFit: 'cover',
             objectPosition: 'center center'
           }}
         />
