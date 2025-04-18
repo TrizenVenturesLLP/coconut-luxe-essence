@@ -7,14 +7,15 @@ const HeroSection = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className="relative w-full mt-8 overflow-hidden" style={{ height: isMobile ? '350px' : '700px' }}>
+    <section className="relative w-full py-0 md:py-6 lg:py-8 overflow-hidden" style={{ height: isMobile ? '350px' : '700px' }}>
+      {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
         <img
           src={hero}
           alt="Coconut trees in nature"
           className="w-full h-full"
           style={{ 
-            objectFit: 'cover',
+            objectFit: 'contain',
             objectPosition: 'center center'
           }}
         />

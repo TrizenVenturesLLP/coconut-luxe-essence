@@ -7,7 +7,7 @@ const HappySkin = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="w-full py-16 bg-coconut-white">
+    <section className="w-full py-3 md:py-6 lg:py-8 bg-coconut-white">
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           {/* Image Section */}

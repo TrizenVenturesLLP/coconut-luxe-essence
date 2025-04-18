@@ -7,7 +7,7 @@ const LaunchAnnouncement = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="w-full py-16 bg-coconut-white">
+    <section className="w-full pt-3 pb-5 md:py-6 lg:py-8 bg-coconut-white">
       <div className="container max-w-6xl mx-auto px-4">
         <div className="w-full">
           <img

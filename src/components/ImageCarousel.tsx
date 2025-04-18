@@ -29,7 +29,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <section className="w-full py-16 bg-coconut-white">
+    <section className="w-full pt-0 pb-2 bg-coconut-white">
       <div className="container max-w-6xl mx-auto px-4">
         <Carousel
           opts={{
@@ -41,7 +41,7 @@ const ImageCarousel = () => {
           <CarouselContent>
             {carouselContent.map((item, index) => (
               <CarouselItem key={index} className="basis-full h-screen">
-              <div className="p-1 h-full">
+              <div className="h-full">
                 <Card className="border-0 h-full">
                   <CardContent className="flex flex-col justify-center items-center p-4 h-full">
                     {/* Image Area */}
@@ -54,7 +54,7 @@ const ImageCarousel = () => {
                     </div>
             
                     {/* Description Area */}
-                    <p className="text-center text-gray-700 mt-6 px-4 max-w-2xl">
+                    <p className="text-center text-gray-700 px-4 max-w-2xl">
                       {item.description}
                     </p>
                   </CardContent>
