@@ -1,13 +1,13 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
-import hero from './assests/hero_section.png';
+import hero from './assests/hero.png';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '350px' : '700px' }}>
+    <section className="relative w-full mt-8 overflow-hidden" style={{ height: isMobile ? '350px' : '700px' }}>
       {/* Nature/Coconut Tree Background Image */}
       <div className="absolute inset-0">
         <img

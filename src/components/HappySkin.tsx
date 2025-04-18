@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
+import happy from './assests/Happy.png'
 
 const HappySkin = () => {
   const isMobile = useIsMobile();
@@ -12,7 +13,7 @@ const HappySkin = () => {
           {/* Image Section */}
           <div className="w-full md:w-1/2">
             <img
-              src="/lovable-uploads/1db7fec0-0f3a-452a-8b3c-9f473e4c6d9a.png"
+              src={happy}
               alt="Happy woman with glowing skin"
               className="w-full h-auto rounded-lg"
             />
