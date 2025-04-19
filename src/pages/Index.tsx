@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-coconut-white">
       {/* Skip to content link for accessibility */}
-      <a href="#main-content" className="skip-link">Skip to content</a>
+      {/* <a href="#main-content" className="skip-link">Skip to content</a> */}
       
       <Navbar />
       <main id="main-content">

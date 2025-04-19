@@ -12,11 +12,13 @@ const HappySkin = () => {
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-16">
           {/* Image Section */}
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <img
-              src={happy}
-              alt="Happy woman with glowing skin"
-              className="w-full max-w-md mx-auto md:max-w-none h-auto rounded-lg shadow-sm"
-            />
+          <img
+            className="w-full max-w-md mx-auto md:max-w-none rounded-lg shadow-sm"
+            style={{ width: '250px', height: '250px' }}
+            src={happy}
+            alt="example"
+          />
+
           </div>
           
           {/* Content Section */}
