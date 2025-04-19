@@ -13,12 +13,12 @@ type BenefitItemProps = {
 
 const BenefitItem = ({ imageSrc, title }: BenefitItemProps) => {
   return (
-    <div className="flex flex-col items-center text-center min-w-[100px]">
-      <div className="mb-2 sm:mb-3 w-full max-w-[64px] sm:max-w-[80px]">
+    <div className="flex flex-col items-center text-center">
+      <div className="mb-2 sm:mb-3 w-16 sm:w-20 md:w-24 aspect-square">
         <img 
           src={imageSrc} 
           alt={title} 
-          className="aspect-square w-full object-contain rounded-lg" 
+          className="w-full h-full object-contain rounded-lg" 
         />
       </div>
       <h3 className="text-sm sm:text-base md:text-lg font-medium font-sans">{title}</h3>
@@ -31,13 +31,13 @@ const ProductBenefits = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="w-full py-3 md:py-4 lg:py-8 bg-coconut-white">
-      <div className="container max-w-6xl mx-auto px-4">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold sm:font-medium font-display text-center mb-8 sm:mb-10">
-        Naturally effective skin care, without the rubbish
-      </h2>
+    <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 bg-coconut-white">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold sm:font-medium font-display text-center mb-8 sm:mb-12">
+          Naturally effective skin care, without the rubbish
+        </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-3 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
           <BenefitItem 
             imageSrc={crueltyFree}
             title="Cruelty Free"
@@ -64,4 +64,3 @@ const ProductBenefits = () => {
 };
 
 export default ProductBenefits;
-

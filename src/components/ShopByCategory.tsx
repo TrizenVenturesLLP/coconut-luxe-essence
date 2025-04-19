@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Lightbulb, ShoppingBag, Droplet, TestTube, Cloud } from 'lucide-react';
 import { 
@@ -16,10 +17,10 @@ const CategoryItem = ({ icon: Icon, label, className = '' }: {
   className?: string 
 }) => (
   <div className={`flex flex-col items-center space-y-3 ${className}`}>
-    <div className="w-24 h-24 rounded-full bg-coconut-beige flex items-center justify-center transition-all hover:scale-105">
-      <Icon className="w-10 h-10 text-gray-800" strokeWidth={1.5} />
+    <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-coconut-beige flex items-center justify-center transition-all hover:scale-105">
+      <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-gray-800" strokeWidth={1.5} />
     </div>
-    <span className="text-xs font-medium tracking-wide text-center font-sans">{label}</span>
+    <span className="text-xs sm:text-sm font-medium tracking-wide text-center font-sans">{label}</span>
   </div>
 );
 
@@ -44,7 +45,7 @@ const ProductItem = ({
         </div>
       )}
       <CardContent className="p-0 overflow-hidden">
-        <div className="h-80 overflow-hidden">
+        <div className="h-64 sm:h-72 md:h-80 overflow-hidden">
           <img 
             src={image} 
             alt={title} 
@@ -53,7 +54,7 @@ const ProductItem = ({
         </div>
       </CardContent>
     </Card>
-    <h3 className="mt-3 text-sm font-medium text-center font-sans">{title}</h3>
+    <h3 className="mt-3 text-sm sm:text-base font-medium text-center font-sans">{title}</h3>
   </div>
 );
 
@@ -96,17 +97,17 @@ const ShopByCategory = () => {
   ];
 
   return (
-    <section className="w-full py-16 bg-coconut-cream">
-      <div className="container max-w-6xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display mb-2">shop by category</h2>
+    <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 bg-coconut-cream">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display mb-2">shop by category</h2>
           <a href="#" className="text-sm text-gray-700 border-b border-gray-400 hover:border-gray-800 transition-colors font-sans">
             shop all
           </a>
         </div>
 
-        <div className="mb-16 overflow-x-auto hide-scrollbar">
-          <div className="flex space-x-8 md:space-x-12 min-w-max md:min-w-0 justify-center md:justify-between">
+        <div className="mb-10 sm:mb-16 overflow-x-auto hide-scrollbar">
+          <div className="flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-12 min-w-max md:min-w-0 justify-center md:justify-between">
             {categories.map((category, index) => (
               <CategoryItem key={index} icon={category.icon} label={category.label} />
             ))}
@@ -116,7 +117,7 @@ const ShopByCategory = () => {
         <Carousel className="mx-auto">
           <CarouselContent className="-ml-4">
             {products.map((product, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
+              <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
                 <ProductItem 
                   image={product.image} 
                   title={product.title} 
@@ -125,8 +126,10 @@ const ShopByCategory = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-0 md:-left-12" />
-          <CarouselNext className="right-0 md:-right-12" />
+          <div className="hidden sm:block">
+            <CarouselPrevious className="left-0 md:-left-12" />
+            <CarouselNext className="right-0 md:-right-12" />
+          </div>
         </Carousel>
       </div>
     </section>

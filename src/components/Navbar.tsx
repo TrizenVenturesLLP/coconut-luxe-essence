@@ -29,9 +29,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-full">
+    <div className="sticky top-0 left-0 right-0 z-50 w-full">
       <nav 
-        className="bg-white transition-all duration-300 px-4 sm:px-6 md:px-12 py-3 sm:py-4"
+        className={cn(
+          "bg-white transition-all duration-300 px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4",
+          isScrolled && "shadow-sm"
+        )}
       >
         <div className="max-w-7xl mx-auto">
           <div className="w-full flex items-center justify-center">

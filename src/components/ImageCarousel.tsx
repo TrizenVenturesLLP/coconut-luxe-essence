@@ -1,3 +1,4 @@
+
 import React from 'react';
 import One from './assests/swipe/1.png';
 import Two from './assests/swipe/2.png';
@@ -28,39 +29,41 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <section className="w-full bg-coconut-white m-0">
-      <div className="container max-w-6xl py-4 md:py-6 lg:py-8 mx-auto px-4">
+    <section className="w-full bg-coconut-white py-8 sm:py-12 md:py-16 lg:py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6">
         <Carousel
           opts={{
             align: "start",
             loop: true,
           }}
-          className="relative w-full h-full"
+          className="relative w-full"
         >
-          <CarouselContent className="h-full">
+          <CarouselContent>
             {carouselContent.map((item, index) => (
-              <CarouselItem key={index} className="basis-full h-full">
-                <Card className="border-0 min-h-[400px] sm:min-h-[500px] lg:min-h-[550px]">
-              <CardContent className="flex flex-col justify-center items-center h-full gap-6">
-                <div className="flex items-center justify-center w-full max-h-[60vh]">
-                  <img
-                    src={item.image}
-                    alt={`Carousel image ${index + 1}`}
-                    className="object-contain max-h-full max-w-[90%] rounded-lg"
-                  />
-                </div>
-                <p className="text-center text-sm sm:text-base text-gray-700 px-6 sm:px-8 max-w-2xl">
-                  {item.description}
-                </p>
-              </CardContent>
-            </Card>
+              <CarouselItem key={index} className="basis-full">
+                <Card className="border-0 min-h-[350px] sm:min-h-[400px] md:min-h-[450px] lg:min-h-[500px]">
+                  <CardContent className="flex flex-col justify-center items-center h-full gap-4 sm:gap-6 p-4 sm:p-6">
+                    <div className="flex items-center justify-center w-full max-h-[50vh]">
+                      <img
+                        src={item.image}
+                        alt={`Carousel image ${index + 1}`}
+                        className="object-contain max-h-full max-w-full rounded-lg"
+                      />
+                    </div>
+                    <p className="text-center text-sm sm:text-base text-gray-700 max-w-2xl">
+                      {item.description}
+                    </p>
+                  </CardContent>
+                </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
 
           {/* Center Arrows Vertically */}
-          <CarouselPrevious className="left-2 top-1/2 -translate-y-1/2 absolute" />
-          <CarouselNext className="right-2 top-1/2 -translate-y-1/2 absolute" />
+          <div className="hidden sm:block">
+            <CarouselPrevious className="left-2 sm:left-4 top-1/2 -translate-y-1/2 absolute" />
+            <CarouselNext className="right-2 sm:right-4 top-1/2 -translate-y-1/2 absolute" />
+          </div>
         </Carousel>
       </div>
     </section>

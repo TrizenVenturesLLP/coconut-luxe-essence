@@ -20,9 +20,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-coconut-cream text-gray-700 py-12 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
+    <footer className="bg-coconut-cream text-gray-700 py-10 sm:py-12 md:py-16">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
           <div className="md:col-span-1">
             <h3 className="font-display text-2xl sm:text-3xl font-bold tracking-wider text-[#006c3b] mb-3 sm:mb-4">AELQEMY</h3>
             <p className="text-sm font-sans font-light leading-relaxed">
@@ -65,9 +65,9 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-xs font-sans text-gray-500 mb-4 md:mb-0">
+        <div className="mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
+          <div className="flex flex-col sm:flex-row justify-between items-center">
+            <p className="text-xs font-sans text-gray-500 mb-4 sm:mb-0">
               © {new Date().getFullYear()} AELQEMY. All rights reserved.
             </p>
             <div className="flex space-x-6">

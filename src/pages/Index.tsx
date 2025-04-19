@@ -14,15 +14,20 @@ import PreLaunchBanner from '@/components/PreLaunchBanner';
 const Index = () => {
   return (
     <div className="min-h-screen bg-coconut-white">
+      {/* Skip to content link for accessibility */}
+      <a href="#main-content" className="skip-link">Skip to content</a>
+      
       <Navbar />
-      <HeroSection />
-      <ProductBenefits />
-      <ImageCarousel />
-      {/* <SkinTypes /> */}
-      <OurStory />
-      <LaunchAnnouncement />
-      <HappySkin />
-      <PreLaunchBanner />
+      <main id="main-content">
+        <HeroSection />
+        <ProductBenefits />
+        <ImageCarousel />
+        {/* <SkinTypes /> */}
+        <OurStory />
+        <LaunchAnnouncement />
+        <HappySkin />
+        <PreLaunchBanner />
+      </main>
       <div id="contact">
         <Footer />
       </div>

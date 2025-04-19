@@ -1,19 +1,24 @@
+
+/* Remove the fixed width and allow content to be responsive */
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
+/* Keep other styles but make them more responsive */
 .logo {
-  height: 6em;
+  max-height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +44,38 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Add general accessibility improvements */
+:focus {
+  outline: 2px solid #006c3b;
+  outline-offset: 2px;
+}
+
+/* Improve text readability */
+body {
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ensure all images have alt text (this is a reminder, actual implementation is in the components) */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add basic skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #006c3b;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
 }

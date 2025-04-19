@@ -7,13 +7,13 @@ const LaunchAnnouncement = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="w-full pt-3 pb-5 md:py-6 lg:py-8 bg-coconut-white">
-      <div className="container max-w-6xl mx-auto px-4">
+    <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 bg-coconut-white">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6">
         <div className="w-full">
           <img
             src={after}
             alt="Launch announcement"
-            className="w-full h-auto object-cover rounded-lg" // Added rounded-lg
+            className="w-full h-auto object-cover rounded-lg shadow-sm"
           />
         </div>
       </div>
@@ -22,4 +22,3 @@ const LaunchAnnouncement = () => {
 };
 
 export default LaunchAnnouncement;
-
