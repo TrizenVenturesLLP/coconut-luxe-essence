@@ -1,4 +1,3 @@
-
 import React from 'react';
 import One from './assests/swipe/1.png';
 import Two from './assests/swipe/2.png';
@@ -29,43 +28,39 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <section className="w-full pt-0 pb-2 bg-coconut-white">
-      <div className="container max-w-6xl mx-auto px-4">
+    <section className="w-full bg-coconut-white m-0">
+      <div className="container max-w-6xl py-4 md:py-6 lg:py-8 mx-auto px-4">
         <Carousel
           opts={{
             align: "start",
             loop: true,
           }}
-          className="w-full"
+          className="relative w-full h-full"
         >
-          <CarouselContent>
+          <CarouselContent className="h-full">
             {carouselContent.map((item, index) => (
-              <CarouselItem key={index} className="basis-full h-screen">
-              <div className="h-full">
+              <CarouselItem key={index} className="basis-full h-full">
                 <Card className="border-0 h-full">
-                  <CardContent className="flex flex-col justify-center items-center p-4 h-full">
-                    {/* Image Area */}
-                    <div className="w-full flex-1 flex items-center justify-center overflow-hidden">
+                  <CardContent className="flex flex-col justify-center items-center h-full gap-6">
+                    <div className="flex items-center justify-center w-full max-h-[60vh]">
                       <img
                         src={item.image}
                         alt={`Carousel image ${index + 1}`}
-                        className="max-h-full max-w-full object-contain rounded-lg" // Added rounded-lg
+                        className="object-contain max-h-full max-w-full rounded-lg"
                       />
                     </div>
-            
-                    {/* Description Area */}
                     <p className="text-center text-gray-700 px-4 max-w-2xl">
                       {item.description}
                     </p>
                   </CardContent>
                 </Card>
-              </div>
-            </CarouselItem>
-            
+              </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-2" />
-          <CarouselNext className="right-2" />
+
+          {/* Center Arrows Vertically */}
+          <CarouselPrevious className="left-2 top-1/2 -translate-y-1/2 absolute" />
+          <CarouselNext className="right-2 top-1/2 -translate-y-1/2 absolute" />
         </Carousel>
       </div>
     </section>
@@ -73,4 +68,3 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
-

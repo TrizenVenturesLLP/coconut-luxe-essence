@@ -34,9 +34,9 @@ const ProductBenefits = () => {
   return (
     <section className="w-full py-2 bg-coconut-white">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display text-center mb-8 sm:mb-10">
-          Naturally effective skin care, without the rubbish
-        </h2>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold sm:font-medium font-display text-center mb-8 sm:mb-10">
+        Naturally effective skin care, without the rubbish
+      </h2>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-3 justify-items-center">
           <BenefitItem 

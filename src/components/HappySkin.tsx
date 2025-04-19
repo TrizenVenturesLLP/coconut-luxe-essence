@@ -15,13 +15,13 @@ const HappySkin = () => {
             <img
               src={happy}
               alt="Happy woman with glowing skin"
-              className="w-full h-auto rounded-lg" // Added rounded-lg
+              className="w-6/4 md:w-6/8 lg:w-6/8 h-auto rounded-lg mx-auto md:mx-0" // Added rounded-lg
             />
           </div>
           
           {/* Content Section */}
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-display">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold sm:font-medium font-display text-center mb-8 sm:mb-10">
               Healthy skin. Happy you.
             </h2>
             <div className="space-y-4 text-lg text-gray-700">

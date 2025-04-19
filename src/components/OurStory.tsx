@@ -6,9 +6,9 @@ const OurStory = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section id="our-story" className="w-full py-8 md:py-16 bg-coconut-white">
+    <section id="our-story" className="w-full pb-8 md:pb-16 bg-coconut-white">
       <div className="container max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-display text-gray-900 mb-6 sm:mb-10">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold sm:font-medium font-display text-center mb-8 sm:mb-10">
           Our Story
         </h2>
 
