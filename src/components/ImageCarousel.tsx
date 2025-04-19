@@ -40,20 +40,20 @@ const ImageCarousel = () => {
           <CarouselContent className="h-full">
             {carouselContent.map((item, index) => (
               <CarouselItem key={index} className="basis-full h-full">
-                <Card className="border-0 h-full">
-                  <CardContent className="flex flex-col justify-center items-center h-full gap-6">
-                    <div className="flex items-center justify-center w-full max-h-[60vh]">
-                      <img
-                        src={item.image}
-                        alt={`Carousel image ${index + 1}`}
-                        className="object-contain max-h-full max-w-full rounded-lg"
-                      />
-                    </div>
-                    <p className="text-center text-gray-700 px-4 max-w-2xl">
-                      {item.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                <Card className="border-0 min-h-[400px] sm:min-h-[500px] lg:min-h-[550px]">
+              <CardContent className="flex flex-col justify-center items-center h-full gap-6">
+                <div className="flex items-center justify-center w-full max-h-[60vh]">
+                  <img
+                    src={item.image}
+                    alt={`Carousel image ${index + 1}`}
+                    className="object-contain max-h-full max-w-[90%] rounded-lg"
+                  />
+                </div>
+                <p className="text-center text-sm sm:text-base text-gray-700 px-6 sm:px-8 max-w-2xl">
+                  {item.description}
+                </p>
+              </CardContent>
+            </Card>
               </CarouselItem>
             ))}
           </CarouselContent>

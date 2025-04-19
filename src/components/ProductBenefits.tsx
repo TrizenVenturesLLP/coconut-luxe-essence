@@ -12,27 +12,26 @@ type BenefitItemProps = {
 };
 
 const BenefitItem = ({ imageSrc, title }: BenefitItemProps) => {
-  const isMobile = useIsMobile();
-  
   return (
-    <div className="flex flex-col items-center text-center">
-      <div className="mb-2 sm:mb-3">
+    <div className="flex flex-col items-center text-center min-w-[100px]">
+      <div className="mb-2 sm:mb-3 w-full max-w-[64px] sm:max-w-[80px]">
         <img 
           src={imageSrc} 
           alt={title} 
-          className="w-12 h-12 sm:w-16 sm:h-16 object-contain rounded-lg" // Added rounded-lg
+          className="aspect-square w-full object-contain rounded-lg" 
         />
       </div>
-      <h3 className="text-sm sm:text-lg font-medium font-sans">{title}</h3>
+      <h3 className="text-sm sm:text-base md:text-lg font-medium font-sans">{title}</h3>
     </div>
   );
 };
+
 
 const ProductBenefits = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="w-full py-2 bg-coconut-white">
+    <section className="w-full py-3 md:py-4 lg:py-8 bg-coconut-white">
       <div className="container max-w-6xl mx-auto px-4">
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold sm:font-medium font-display text-center mb-8 sm:mb-10">
         Naturally effective skin care, without the rubbish
