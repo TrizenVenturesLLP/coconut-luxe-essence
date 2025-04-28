@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import One from './assests/swipe/1.png';
 import Two from './assests/swipe/2.png';
 import Three from './assests/swipe/3.png';
@@ -7,8 +6,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -28,29 +26,51 @@ const ImageCarousel = () => {
     }
   ];
 
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [api, setApi] = useState<CarouselApi | null>(null);
+
+  // Sync activeIndex when manually swiping
+  useEffect(() => {
+    if (!api) return;
+
+    const updateIndex = () => {
+      const current = api.selectedScrollSnap();
+      setActiveIndex(current);
+    };
+
+    // Listen to the carousel change
+    api.on("select", updateIndex);
+
+    // Set the initial index
+    updateIndex();
+
+    // Clean up
+    return () => {
+      api.off("select", updateIndex);
+    };
+  }, [api]);
+
   return (
-    <section className="w-full bg-coconut-white py-8 sm:py-12 md:py-16 lg:py-20">
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6">
+    <section className="w-full bg-coconut-white py-4">
+      <div className="container max-w-6xl mx-auto px-4">
         <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
+          setApi={setApi}
+          opts={{ align: "start", loop: true }}
           className="relative w-full"
         >
           <CarouselContent>
             {carouselContent.map((item, index) => (
               <CarouselItem key={index} className="basis-full">
-                <Card className="border-0 min-h-[350px] sm:min-h-[400px] md:min-h-[450px] lg:min-h-[500px]">
-                  <CardContent className="flex flex-col justify-center items-center h-full gap-4 sm:gap-6 p-4 sm:p-6">
-                    <div className="flex items-center justify-center w-full max-h-[50vh]">
+                <Card className="border-0 min-h-[400px] sm:min-h-[450px] md:min-h-[500px] lg:min-h-[550px]">
+                  <CardContent className="flex flex-col items-center gap-6 p-4 sm:p-6">
+                    <div className="w-full max-w-xl flex justify-center">
                       <img
                         src={item.image}
                         alt={`Carousel image ${index + 1}`}
-                        className="object-contain max-h-full max-w-full rounded-lg"
+                        className="object-contain w-full h-auto rounded-lg"
                       />
                     </div>
-                    <p className="text-center text-sm sm:text-base text-gray-700 max-w-2xl">
+                    <p className="text-center text-sm sm:text-base text-gray-700 leading-relaxed max-w-2xl">
                       {item.description}
                     </p>
                   </CardContent>
@@ -58,13 +78,24 @@ const ImageCarousel = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-
-          {/* Center Arrows Vertically */}
-          <div className="hidden sm:block">
-            <CarouselPrevious className="left-2 sm:left-4 top-1/2 -translate-y-1/2 absolute" />
-            <CarouselNext className="right-2 sm:right-4 top-1/2 -translate-y-1/2 absolute" />
-          </div>
         </Carousel>
+
+        {/* Dots */}
+        <div className="flex justify-center items-center gap-2 mt-4">
+          {carouselContent.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                if (api) {
+                  api.scrollTo(index);
+                }
+              }}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                index === activeIndex ? 'bg-black' : 'bg-gray-300'
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

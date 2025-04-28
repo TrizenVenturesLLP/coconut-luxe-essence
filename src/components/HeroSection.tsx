@@ -1,23 +1,14 @@
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
 import hero from './assests/hero.png';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const HeroSection = () => {
-  const isMobile = useIsMobile();
-
   return (
-    <section className="relative w-full overflow-hidden" style={{ height: isMobile ? '250px' : '800px' }}>
-      {/* Nature/Coconut Tree Background Image */}
-      <div className="absolute inset-0">
+    <section className="w-full">
+      <div className="w-full">
         <img
           src={hero}
-          alt="Coconut trees in nature"
-          className="w-full"
-          style={{ 
-            objectFit: 'contain',
-            objectPosition: 'center center'
-          }}
+          alt="Hero Banner"
+          className="w-full h-auto object-contain"
         />
       </div>
     </section>

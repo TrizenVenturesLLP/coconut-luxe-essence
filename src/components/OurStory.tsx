@@ -9,7 +9,7 @@ const OurStory = () => {
   return (
     <section id="our-story" className="w-full py-8 sm:py-12 md:py-16 lg:py-20 bg-coconut-white">
       <div className="container max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold sm:font-medium font-display text-center mb-6 sm:mb-8 md:mb-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold sm:font-medium font-display text-center mb-6 sm:mb-8 md:mb-10">
           Our Story
         </h2>
 
