@@ -25,7 +25,7 @@ const HappySkin = () => {
             {/* Content Section */}
             <div className="w-full md:w-1/2 space-y-4 sm:space-y-6 text-center md:text-left">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold sm:font-medium font-display">
-                Healthy skin. Happy you.
+                Healthy skin. <br></br>Happy you.
               </h2>
               <div className="space-y-3 sm:space-y-4 text-base sm:text-lg text-gray-700">
                 <p>Beauty begins where care meets intention.</p>
